@@ -15,4 +15,4 @@ Node.js Express: JWT example | Token Based Authentication & Authorization
 https://www.bezkoder.com/node-js-jwt-authentication-mysql/
 
 JWT Refresh Token implementation in Node.js example
-https://www.bezkoder.com/jwt-refresh-token-node-js/![image](https://user-images.githubusercontent.com/28437912/164582871-0a3df200-a079-452f-88d7-e23a24eaf29a.png)
+https://www.bezkoder.com/jwt-refresh-token-node-js/
