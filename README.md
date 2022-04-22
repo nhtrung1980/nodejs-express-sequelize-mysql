@@ -1,4 +1,4 @@
-# nodejs-express-sequelize-mysql
+# nodejs express sequelize mysql Tut
 
 Code tuts from:
 
