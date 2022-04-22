@@ -1,6 +1,6 @@
 module.exports = app => {
     const { verifySignUp } = require("../middleware");
-    const controller = require("../controllers/auth.controller.js");
+    const controller = require("../controllers/auth.controller");
     var router = require("express").Router();
 
     router.post("/signup",
@@ -14,6 +14,8 @@ module.exports = app => {
     router.post("/signin",
         controller.signin
     );
+
+    router.post("/refreshtoken", controller.refreshToken);
 
     app.use('/api/auth', router);
 };

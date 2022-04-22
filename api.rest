@@ -1,3 +1,12 @@
+//refresh token
+###
+POST http://localhost:8082/api/auth/refreshtoken
+Content-Type: application/json; charset=utf-8
+
+{
+    "refreshToken": "b8819e92-8df9-4307-a990-8138ba7245fd"
+}
+
 ###
 GET http://localhost:8082/api/test/all
 
@@ -21,6 +30,17 @@ Content-Type: application/json; charset=utf-8
     "email": "admin@email.com",
     "password" : "12345678",
     "roles": ["admin"]
+}
+
+###
+POST http://localhost:8082/api/auth/signup
+Content-Type: application/json; charset=utf-8
+
+{
+    "username" : "mod",
+    "email": "mod@email.com",
+    "password" : "12345678",
+    "roles": ["moderator", "user"]
 }
 
 //post a tut

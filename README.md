@@ -16,3 +16,7 @@ https://www.bezkoder.com/node-js-jwt-authentication-mysql/
 
 JWT Refresh Token implementation in Node.js example
 https://www.bezkoder.com/jwt-refresh-token-node-js/
+
+# Install plugin Rest Client in VS Code
+- REST Client of Huachao Mao, help us run api easier
+- Open file api.rest and click on "Send Request" to run api command
