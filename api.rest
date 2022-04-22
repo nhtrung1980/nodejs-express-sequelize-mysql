@@ -1,0 +1,77 @@
+###
+GET http://localhost:8082/api/test/all
+
+//auth sign in
+###
+POST http://localhost:8082/api/auth/signin
+Content-Type: application/json; charset=utf-8
+
+{
+    "username" : "mod",
+    "password" : "12345678"
+}
+
+//auth signup
+###
+POST http://localhost:8082/api/auth/signup
+Content-Type: application/json; charset=utf-8
+
+{
+    "username" : "admin",
+    "email": "admin@email.com",
+    "password" : "12345678",
+    "roles": ["admin"]
+}
+
+//post a tut
+###
+POST http://localhost:8082/api/tutorials
+Content-Type: application/json; charset=utf-8
+
+{
+    "title" : "JS Node 9",
+    "description" : "Tut 9 description",
+    "published" : false
+}
+
+//get tut list
+###
+GET http://localhost:8082/api/tutorials
+Content-Type: application/json; charset=utf-8
+
+//get tut by id
+###
+GET http://localhost:8082/api/tutorials/1
+Content-Type: application/json; charset=utf-8
+
+//update
+###
+PUT http://localhost:8082/api/tutorials/6
+Content-Type: application/json; charset=utf-8
+
+{
+    "title" : "JS Node 7 - edited",
+    "description" : "Tut 7 description",
+    "published" : true
+}
+
+//get tut with title
+###
+GET http://localhost:8082/api/tutorials?title=6
+Content-Type: application/json; charset=utf-8
+
+//delete an item
+###
+DELETE http://localhost:8082/api/tutorials/7
+Content-Type: application/json; charset=utf-8
+
+//add comment
+###
+POST http://localhost:8082/api/tutorials/comment
+Content-Type: application/json; charset=utf-8
+
+{
+    "name" : "Bezkoder",
+    "text" : "Good Job",
+    "tutorialId": 2
+}
